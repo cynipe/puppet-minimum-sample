@@ -1,0 +1,18 @@
+---
+classes:
+  - profile::docker
+
+profile::base::packages:
+  - vim-enhanced
+  - tree
+  - wget
+
+# Docker
+profile::docker::docker_config:
+  tcp_bind: tcp://0.0.0.0:2376
+profile::docker::admins:
+  - vagrant
+profile::docker::images:
+  - debian:jessie
+  - centos:centos6
+profile::docker::install_compose: true

@@ -1,0 +1,30 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    garethr-docker (3.3.2)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-firewall (1.4.0)
+    puppetlabs-stdlib (4.5.1)
+    stahnma-epel (1.0.2)
+    yguenane-repoforge (0.2.0)
+      puppetlabs-stdlib (>= 3.2.0)
+
+GIT
+  remote: https://github.com/jfryman/puppet-selinux.git
+  ref: master
+  sha: 2a16ded5e6b715e8643251572597f38f5354397d
+  specs:
+    selinux (0.2.2)
+      puppetlabs-stdlib (>= 0)
+
+DEPENDENCIES
+  garethr-docker (~> 3.3)
+  puppetlabs-firewall (~> 1.1)
+  puppetlabs-stdlib (~> 4.3)
+  selinux (>= 0)
+  yguenane-repoforge (~> 0.2.0)
+

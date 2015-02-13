@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: '%{hieradata_dir}'
+:hierarchy:
+  - "node/%{::fqdn}"
+  - "node/%{::hostname}"
+  - common

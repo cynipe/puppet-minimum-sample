@@ -1,0 +1,7 @@
+---
+classes:
+  - epel
+  - profile::base
+
+profiles::base::selinux: permissive
+profiles::base::firewall_ensure: running
